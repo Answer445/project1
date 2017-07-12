@@ -1,0 +1,608 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+
+.main
+	background: url(/img/bg2_top.jpg) top center no-repeat
+	min-height: 250px
+	margin: 0 auto
+	width: 940px
+
+.main2
+	margin: 0 auto
+	width: 940px
+	//background: url(/img/bg2_top.jpg) top center no-repeat
+//	min-height: 250px
+	
+
+.wrapper
+	width: 100%
+	overflow: hidden
+	min-height: 57px
+
+.h1
+	float: left
+	padding: 5px 0 0 10px
+	position: absolute
+
+.h5
+	float: right
+	padding: 5px 0 0 550px
+	position: absolute
+	border: 0
+	text-align: center
+	font: 16px Arial, Helvetica, sans-serif
+	color: #363636
+	line-height: 1.125
+	line-height: 20px
+	min-width: 391px
+
+.h6
+	float: right
+	padding: 50px 0 0 725px
+	position: absolute
+	border: 0
+	font: 24px Arial, Helvetica, sans-serif
+	color: #363636
+	line-height: 30px
+	min-width: 257px
+
+a
+	color: #008cdd
+	text-decoration: underline
+	outline: none
+
+#logo
+	display: block
+	background: url(/img/logo07-01.png) no-repeat
+	width: 300px
+	height: 70px
+	text-indent: -5000px
+
+.logoM, .textM, .phoneM, .mobile-menu, .toggle-wrap, .footM, .contentM
+    display: none
+
+.col
+	width: 940px
+	float: right
+
+.col2
+	padding-left: 50px
+	width: 550px
+
+.ic
+  border: 0
+  float: right
+  background: #fff
+  color: #f00
+  width: 50%
+  line-height: 10px
+  font-size: 10px
+  margin: -220% 0 0 0
+  overflow: hidden
+  padding: 0
+  a
+    border: 0
+    float: right
+    background: #fff
+    color: #f00
+    width: 50%
+    line-height: 10px
+    font-size: 10px
+    margin: -220% 0 0 0
+    overflow: hidden
+    padding: 0
+
+.men
+	margin: 2px auto
+	height: 55px
+	z-index: 999
+
+.men1
+	z-index: 111
+
+#content
+	width: 100%
+	overflow: hidden
+	padding-bottom: 35px
+	z-index: 111
+
+#nav::after
+	content: "."
+	display: block
+	clear: both
+	visibility: hidden
+	line-height: 0
+	height: 0
+	z-index: 999
+
+#nav
+	margin: 0
+	padding: 7px 6px 0
+	//background: #7d7d7d url(/img/gradient.png) repeat-x 0 -110px
+	border-radius: 2em
+	-webkit-border-radius: 2em
+	//-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4)
+	color: #666
+	//width: 500px
+	z-index: 999
+
+#nav li
+	margin: 0 5px
+	padding: 0 0 8px
+	float: left
+	position: relative
+	list-style: none
+	font-weight: bold
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3)
+	font-size: 14px
+
+#nav a
+	font-size: 18px
+	font-weight: bold
+	color: #e7e5e5
+	text-decoration: none
+	display: block
+	padding: 8px 20px
+	margin: 0
+	z-index: 999
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3)
+
+.active > a:first-child
+	color: #008CDD !important
+	z-index: 999
+
+
+#nav
+  a:hover
+    background: #000
+    color: #fff
+  .current a, li:hover > a
+    background: #666 url(/img/gradient.png) repeat-x 0 -40px
+    color: #444
+    border-top: solid 1px #f8f8f8
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 1)
+  ul li:hover a, li:hover li a
+    font-size: 14px
+    background: none
+    border: none
+    color: #666
+    z-index: 999
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+  ul a:hover
+    background: #0078ff url(/img/gradient.png) repeat-x 0 -100px !important
+    color: #fff !important
+    z-index: 999
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+  li:hover > ul
+    display: block
+    z-index: 999
+
+#nav
+  ul
+    display: none
+    z-index: 999
+    margin: 0
+    padding: 0
+    width: 185px
+    position: absolute
+    top: 35px
+    left: 0
+    background: #ddd url(/img/gradient.png) repeat-x 0 0
+    border: solid 1px #b4b4b4
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+    li
+      float: none
+      margin: 0
+      padding: 0
+      z-index: 999
+    a
+      font-weight: normal
+      z-index: 999
+    ul
+      left: 181px
+      top: -3px
+      z-index: 999
+    li
+      &:first-child > a
+        -webkit-border-top-left-radius: 9px
+        -moz-border-radius-topleft: 9px
+        z-index: 999
+        -webkit-border-top-right-radius: 9px
+        -moz-border-radius-topright: 9px
+      &:last-child > a
+        -webkit-border-bottom-left-radius: 9px
+        -moz-border-radius-bottomleft: 9px
+        z-index: 999
+        -webkit-border-bottom-right-radius: 9px
+        -moz-border-radius-bottomright: 9px
+  &:after
+    content: "."
+    display: block
+    clear: both
+    visibility: hidden
+    line-height: 0
+    height: 0
+    z-index: 999
+   	display: inline-block
+ 	z-index: 999
+
+
+#nav ul a
+  font-weight: normal
+  text-shadow: 0 1px 0 #fff
+  z-index: 999
+
+.active > a:first-child
+  color: #008CDD !important
+  z-index: 999
+
+
+#djslider-loader70
+  margin: 0 auto
+  position: relative
+  height: 300px
+  width: 900px
+
+#djslider70
+  margin: 0 auto
+  position: relative
+  height: 300px
+  width: 900px
+  display: none
+
+#slider-container70
+  position: absolute
+  overflow: hidden
+  left: 0
+  top: 0
+  height: 300px
+  width: 900px
+
+#djslider70 ul#slider70
+  margin: 0 !important
+  padding: 0 !important
+  border: 0 !important
+  li
+    list-style: none outside !important
+    float: left
+    margin: 0 !important
+    border: 0 !important
+    padding: 0 10px 0px 0 !important
+    position: relative
+    height: 300px
+    width: 900px
+    background: none
+    overflow: hidden
+
+#slider70
+  li
+    img
+      width: 900px
+      height: auto
+      border: 0 !important
+    a
+      img, &:hover img
+        border: 0 !important
+  .slide-desc
+    position: absolute
+    bottom: 100px
+    left: 600px
+    width: 250px
+  .slide-desc-in
+    position: relative
+  .slide-desc-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .slide-desc-text
+    position: relative
+    h3
+      display: block !important
+
+#navigation70
+  position: relative
+  top: 30px
+  margin: 0 5px
+  text-align: center !important
+
+#prev70
+  cursor: pointer
+  display: block
+  position: absolute
+  left: 0
+  top: -99999px
+
+#next70
+  cursor: pointer
+  display: block
+  position: absolute
+  right: 0
+  top: -99999px
+
+#play70, #pause70
+  cursor: pointer
+  display: block
+  position: absolute
+  left: 47%
+  top: -99999px
+
+
+#content2
+  width: 100%
+  overflow: hidden
+  padding-bottom: 35px
+
+.pad_bot3
+  padding-bottom: 5px
+
+a
+  &.rollover
+	  background: url(img/pres1.jpg)
+	  display: block
+	  width: 300px
+	  height: 43px
+  &.rollover2
+    background: url(img/part1.jpg)
+    display: block
+    width: 300px
+    height: 44px
+  &.rollover3
+    background: url(img/kont1.jpg)
+    display: block
+    width: 300px
+    height: 44px
+
+a
+  &.rollover:hover
+    background: url(img/pres2.jpg)
+  &.rollover2:hover
+    background: url(img/part2.jpg)
+  &.rollover3:hover
+    background: url(img/kont2.jpg)
+
+a:hover
+  text-decoration: none
+  color:#008cdd
+
+a
+  &.linkopacity
+    img
+      filter: alpha(opacity = 100)
+      -moz-opacity: 1.0
+      opacity: 1.0
+      -khtml-opacity: 1.0
+    &:hover img
+      filter: alpha(opacity = 40)
+      -moz-opacity: 0.4
+      opacity: 0.4
+      -khtml-opacity: 0.4
+  &.linkopacity2
+    img
+      filter: alpha(opacity = 100)
+      -moz-opacity: 1.0
+      opacity: 1.0
+      -khtml-opacity: 1.0
+    &:hover img
+      border: 1px solid #333333
+      filter: alpha(opacity = 40)
+      -moz-opacity: 0.4
+      opacity: 0.4
+      -khtml-opacity: 0.4
+
+.pad
+  padding: 0 19px
+
+.body3
+  background: url(img/bgf_top.gif) top center repeat-x
+
+
+  #slider70
+  .slide-desc
+    position: absolute
+    bottom: 100px
+    left: 600px
+    width: 250px
+  .slide-desc-in
+    position: relative
+  .slide-desc-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.slide-desc-bg
+  //background: #334
+  opacity: 0.8
+  filter: alpha(opacity = 80)
+
+#slider70 .slide-desc-text
+  position: relative
+
+.slide-desc-text
+  color: #333333
+  padding: 10px
+  text-align: left
+  .slide-title
+    font-size: 1.5em
+    color: #008CDD
+    margin-bottom: 5px
+
+#k2Container
+  padding: 0 0 24px 0
+
+div.itemContainer
+  float: left
+
+div
+  &.catItemView
+    padding: 4px
+  &.catItemHeader h3.catItemTitle
+    font-family: Arial, serif
+    font-size: 16px
+    font-weight: normal
+    line-height: 110%
+    padding: 10px 0 4px 0
+    margin: 0
+
+div
+  &.catItemBody
+    padding: 8px 0
+    margin: 0
+  &.catItemImageBlock
+    padding: 8px
+    margin: 0 0 16px 0
+
+span.catItemImage
+  display: block
+  text-align: center
+  margin: 0 0 8px 0
+  img
+    padding: 8px
+    float: left
+
+div.catItemIntroText
+  font-size: inherit
+  font-weight: normal
+  line-height: inherit
+  padding: 4px 0 12px 0
+
+.clr
+  clear: both
+  height: 0
+  line-height: 0
+  display: block
+  float: none
+  padding: 0
+  margin: 0
+  border: none
+
+div.k2Pagination
+  padding: 8px
+  margin: 24px 0 4px 0
+  text-align: center
+  color: #999
+
+
+table
+  &.contentpaneopen
+    width: 100%
+  padding: 0
+  border: none
+  border-collapse: collapse
+  td
+    padding: 0
+    border: none
+    border-collapse: collapse
+
+p
+  padding-bottom: 20px
+
+ul.sigProClassic
+  margin: 0 !important
+  padding: 8px 0 !important
+  list-style: none !important
+  float: left
+  li.sigProThumb
+    float: left
+    background: #fff !important
+    margin: 5px
+    padding: 0
+    list-style: none !important
+    span
+      &.sigProLinkOuterWrapper
+        display: block
+        float: left
+        margin: 0
+        padding: 0 5px 5px 0
+        background: url(/web/20160511042658im_/http://logostom.ru/plugins/content/jw_sigpro/tmpl/Classic/images/shadowAlpha.png) no-repeat right bottom
+      &.sigProLinkWrapper
+        display: block
+        float: left
+        margin: -5px 0 0 -5px
+        padding: 4px
+        border: 1px solid #ccc
+    a.sigProLink
+      color: #eee
+      position: relative
+      float: left
+      display: block
+      padding: 0
+      margin: 0
+      border: none
+      &:hover
+        position: relative
+        float: left
+        display: block
+        padding: 0
+        margin: 0
+        border: none
+      img.sigProImg, &:hover img.sigProImg
+        display: block
+        width: 100%
+        height: 100%
+        padding: 0
+        margin: 0
+        border: none
+        background-repeat: no-repeat
+        background-position: 50% 50%
+
+li.sigProClear
+  clear: both
+  float: none !important
+  height: 0 !important
+  line-height: 0 !important
+  border: none !important
+  background: none !important
+  width: auto
+  margin: 0 !important
+  padding: 0 !important
+
+.sigProPrintMessage
+  display: none
+
+h2
+  font-size: 30px
+  line-height: 1.2em
+  color: #008CDD
+  padding: 35px 0 16px 0
+  font-weight: normal
+  letter-spacing: -1px
+
+
+.tovar-image
+  width: 110px
+  height: 90px
+
+.tovar-wrap
+  width: 120px
+  height: 100px
+  text-align: center
+
+.tables
+    width: 100%
+    border: 1px solid black
+    tr
+      border: 1px solid black
+    td
+      border: 1px solid black
+

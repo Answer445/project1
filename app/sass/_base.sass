@@ -1,0 +1,74 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	//font-family: $default-font
+	overflow-x: hidden
+	background: url(img/bg2_top.gif) top repeat-x #fff
+	font: 13px Arial, Helvetica, sans-serif
+	color: #333333
+	line-height: 20px
+
+header
+	width: 100%
+	overflow: hidden
+	padding-bottom: 20px
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt, u, ul, var
+    background: transparent
+    border: 0 none
+    font-size: 100%
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    vertical-align: top
+
+p
+	padding-bottom: 20px
+
+
+.col1, .col2, .col3, .col4, .cols
+  float: left
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video
+  display: block
+
+
+table
+  border-collapse: collapse
+  td
+    border-collapse: collapse
+
+
+header
+    width: 100%
+    overflow: hidden
+    padding-bottom: 20px
